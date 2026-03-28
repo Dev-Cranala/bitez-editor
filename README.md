@@ -29,16 +29,16 @@ pnpm add bitez-editor
 ### 2. Basic Usage
 
 ```tsx
-import { EditorProvider, MainEditor, SidebarLeft, SidebarRight } from 'bitez-editor';
+import { EditorProvider, Editor, SidebarLeft, SidebarRight } from 'bitez-editor';
 import { LocalStorageAdapter } from 'bitez-editor/adapters';
-import 'bitez-editor/dist/style.css';
+import 'bitez-editor/style.css';
 
 function MyWritingApp() {
   return (
     <EditorProvider adapter={LocalStorageAdapter} maxStories={100}>
       <div className="layout">
         <SidebarLeft />
-        <MainEditor />
+        <Editor />
         <SidebarRight />
       </div>
     </EditorProvider>
@@ -89,7 +89,6 @@ class FirebaseAdapter implements IStorageAdapter {
 
 Contributions are what make the open-source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-Please check [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 
 ## �️ Development Setup
 
